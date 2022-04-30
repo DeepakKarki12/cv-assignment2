@@ -57,9 +57,6 @@ while True:
     cv2.imshow("result", mask)
 
     key = cv2.waitKey(1)
-    plt.imshow(mask)
-    plt.show()
-    cv2.waitKey(0)
     if key == 27:
         break
 
