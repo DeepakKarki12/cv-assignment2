@@ -8,7 +8,7 @@ def nothing(x):
 
 # reading and resizing the image
 frame = cv2.imread('p3.png')
-# frame = cv2.resize(frame,(500,500))
+frame = cv2.resize(frame,(500,500))
 
 # converting the image into hsv
 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -24,7 +24,7 @@ for i in hsv:
         saturation.append(j[1])
         value.append(j[2])
 
-# taking average and adding the a constant  for better result in of saturation value
+# taking average and adding the a constant  for better result in of hue,saturation, value
 lh = int(sum(hue)/len(hue) - 5)
 ls = int(sum(saturation)/len(saturation) + 8)
 lv = int(sum(value)/len(value) - 100)
