@@ -14,7 +14,7 @@ frame = cv2.imread('p3.png')
 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
 
-# collecting all the value for saturation
+# collecting all the value for hue saturation value
 hue = []
 saturation = []
 value = []
